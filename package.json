@@ -1,0 +1,23 @@
+{
+  "name": "brownie-fe-test",
+  "version": "1.0.0",
+  "description": "Brownie Front End Test",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass -watch scss -o css",
+    "dev": "node-sass scss -o css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/andreacontestabile/brownie-fe-test.git"
+  },
+  "author": "Andrea Contestabile",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/andreacontestabile/brownie-fe-test/issues"
+  },
+  "homepage": "https://github.com/andreacontestabile/brownie-fe-test#readme",
+  "dependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
