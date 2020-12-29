@@ -1,0 +1,19 @@
+// Abstracts
+@import "abstracts/_variables";
+@import "abstracts/_mixins";
+
+// Base
+@import "base/_reset";
+@import "base/_common";
+@import "base/_typography";
+
+// FontAwesome
+$fa-font-path: "../node_modules/@fortawesome/fontawesome-free/webfonts";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../node_modules/@fortawesome/fontawesome-free/scss/solid";
+
+// Partials
+
+@import "partials/_header";
+@import "partials/_main";
+@import "partials/_footer";

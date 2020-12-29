@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/andreacontestabile/brownie-fe-test#readme",
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "node-sass": "^5.0.0"
   }
 }

@@ -1,0 +1,62 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  height: 100px;
+  background-color: $white;
+
+  .logo {
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+    align-items: center;
+    width: 330px;
+    background-color: $brandColor;
+    font-family: "Montserrat";
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    color: $white;
+  }
+
+  .main-nav {
+    width: 100%;
+    ul.main-nav-list {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+
+      li.main-nav-list-item {
+        a.main-nav-link {
+          font-size: 1.1rem;
+          font-weight: normal;
+        }
+      }
+    }
+  }
+
+  .search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    width: 400px;
+
+    input {
+      width: 120px;
+      border: 0;
+      border-bottom: 1px solid $black;
+      outline: 0;
+    }
+
+    button[type="submit"] {
+      background: none;
+      border: none;
+
+      i {
+        padding: 0 5px;
+        font-size: 1rem;
+      }
+    }
+  }
+}
