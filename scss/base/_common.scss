@@ -1,6 +1,35 @@
 body {
   font-family: "Montserrat", sans-serif;
-  // -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  p {
+    color: $textColor;
+    font-family: "Merriweather", serif;
+    font-size: 1.3rem;
+    letter-spacing: 1.7px;
+    line-height: 2.4;
+
+    &.supertitle {
+      font-size: 1.1rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: bold;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      color: $white;
+    }
+    &.subtitle {
+      margin-bottom: 70px;
+      font-size: 0.95rem;
+      font-family: "Montserrat", sans-serif;
+      font-weight: normal;
+      letter-spacing: 0.5px;
+      color: $white;
+    }
+  }
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 ul {
@@ -17,11 +46,11 @@ a:active {
 a.btn {
   display: inline-block;
   font-size: 1.6rem;
-}
 
-a.btn.cta {
-  padding: 20px 120px;
-  color: $brandColor;
-  font-family: "millerdisplay";
-  border: 1px solid $brandColor;
+  &.cta {
+    padding: 20px 120px;
+    color: $brandColor;
+    font-family: "millerdisplay";
+    border: 1px solid $brandColor;
+  }
 }

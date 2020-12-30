@@ -1,0 +1,106 @@
+section {
+  padding: 80px;
+
+  h3 {
+    max-width: 40%;
+    margin-bottom: 60px;
+    font-size: 5.5rem;
+    font-family: "millerdisplay", serif;
+    font-weight: normal;
+  }
+
+  .content-title {
+    margin: 40px 0 120px;
+    font-family: "millerdisplay", serif;
+    font-size: 3.8rem;
+    font-weight: normal;
+  }
+
+  &#history {
+    .history-text {
+      display: flex;
+      justify-content: space-between;
+
+      p {
+        width: 40%;
+
+        &:nth-child(2n) {
+          width: 50%;
+        }
+      }
+    }
+  }
+
+  &.highlights {
+    padding-bottom: 120px;
+    .highlight {
+      display: flex;
+
+      .highlights-description {
+        width: 50%;
+        padding: 0 6%;
+        text-align: center;
+        @include flex-centered;
+        flex-direction: column;
+
+        p.supertitle {
+          color: $black;
+        }
+
+        .btn {
+          margin-top: 60px;
+          &.cta {
+            padding: 20px 140px;
+          }
+        }
+      }
+
+      img {
+        width: 50%;
+      }
+    }
+  }
+
+  &.press {
+    padding-top: 0;
+    background: linear-gradient(90deg, $white 50%, $sectionBgColor 50%);
+    .press-content {
+      display: flex;
+      justify-content: space-between;
+      & > p {
+        width: 30%;
+        padding-right: 40px;
+      }
+
+      .press-widget {
+        width: 68%;
+
+        .press-item {
+          display: flex;
+
+          img {
+            width: 65%;
+          }
+          .press-item-content {
+            width: 35%;
+            padding-left: 40px;
+            .supertitle {
+              display: block;
+              color: $black;
+
+              &.date {
+                color: $brandColor;
+                font-weight: normal;
+                line-height: 1;
+              }
+            }
+            .content-title {
+              margin: 60px 0 0;
+              font-size: 3rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

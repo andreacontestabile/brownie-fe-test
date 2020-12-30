@@ -1,4 +1,4 @@
-section.hero {
+.hero {
   height: calc(92vh - 95px);
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
@@ -13,11 +13,6 @@ section.hero {
     .hero-text {
       padding-bottom: 40px;
       color: $white;
-      .hero-supertitle {
-        font-size: 1.1rem;
-        text-transform: uppercase;
-        letter-spacing: 4px;
-      }
 
       .hero-title {
         max-width: 680px;
@@ -26,13 +21,6 @@ section.hero {
         font-family: "millerdisplay", serif;
         font-weight: normal;
         text-transform: capitalize;
-      }
-
-      .hero-subtitle {
-        margin-bottom: 70px;
-        font-size: 0.95rem;
-        font-weight: normal;
-        letter-spacing: 0.5px;
       }
     }
   }

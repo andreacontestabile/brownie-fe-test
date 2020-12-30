@@ -7,6 +7,38 @@
 
 body {
   font-family: "Montserrat", sans-serif;
+  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+}
+
+body p {
+  color: #a0a0a0;
+  font-family: "Merriweather", serif;
+  font-size: 1.3rem;
+  letter-spacing: 1.7px;
+  line-height: 2.4;
+}
+
+body p.supertitle {
+  font-size: 1.1rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  color: #fff;
+}
+
+body p.subtitle {
+  margin-bottom: 70px;
+  font-size: 0.95rem;
+  font-family: "Montserrat", sans-serif;
+  font-weight: normal;
+  letter-spacing: 0.5px;
+  color: #fff;
+}
+
+.container {
+  max-width: 1500px;
+  margin: 0 auto;
 }
 
 ul {
@@ -6269,7 +6301,7 @@ header .search button[type="submit"] i {
   font-size: 1rem;
 }
 
-section.hero {
+.hero {
   height: calc(92vh - 95px);
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
@@ -6278,7 +6310,7 @@ section.hero {
   text-align: center;
 }
 
-section.hero .overlay {
+.hero .overlay {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6292,18 +6324,12 @@ section.hero .overlay {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-section.hero .overlay .hero-text {
+.hero .overlay .hero-text {
   padding-bottom: 40px;
   color: #fff;
 }
 
-section.hero .overlay .hero-text .hero-supertitle {
-  font-size: 1.1rem;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-}
-
-section.hero .overlay .hero-text .hero-title {
+.hero .overlay .hero-text .hero-title {
   max-width: 680px;
   margin: 50px 0 25px;
   font-size: 5.6rem;
@@ -6312,10 +6338,139 @@ section.hero .overlay .hero-text .hero-title {
   text-transform: capitalize;
 }
 
-section.hero .overlay .hero-text .hero-subtitle {
-  margin-bottom: 70px;
-  font-size: 0.95rem;
+section {
+  padding: 80px;
+}
+
+section h3 {
+  max-width: 40%;
+  margin-bottom: 60px;
+  font-size: 5.5rem;
+  font-family: "millerdisplay", serif;
   font-weight: normal;
-  letter-spacing: 0.5px;
+}
+
+section .content-title {
+  margin: 40px 0 120px;
+  font-family: "millerdisplay", serif;
+  font-size: 3.8rem;
+  font-weight: normal;
+}
+
+section#history .history-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section#history .history-text p {
+  width: 40%;
+}
+
+section#history .history-text p:nth-child(2n) {
+  width: 50%;
+}
+
+section.highlights {
+  padding-bottom: 120px;
+}
+
+section.highlights .highlight {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.highlights .highlight .highlights-description {
+  width: 50%;
+  padding: 0 6%;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+section.highlights .highlight .highlights-description p.supertitle {
+  color: #000;
+}
+
+section.highlights .highlight .highlights-description .btn {
+  margin-top: 60px;
+}
+
+section.highlights .highlight .highlights-description .btn.cta {
+  padding: 20px 140px;
+}
+
+section.highlights .highlight img {
+  width: 50%;
+}
+
+section.press {
+  padding-top: 0;
+  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fff), color-stop(50%, #f8f8f8));
+  background: linear-gradient(90deg, #fff 50%, #f8f8f8 50%);
+}
+
+section.press .press-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.press .press-content > p {
+  width: 30%;
+  padding-right: 40px;
+}
+
+section.press .press-content .press-widget {
+  width: 68%;
+}
+
+section.press .press-content .press-widget .press-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.press .press-content .press-widget .press-item img {
+  width: 65%;
+}
+
+section.press .press-content .press-widget .press-item .press-item-content {
+  width: 35%;
+  padding-left: 40px;
+}
+
+section.press .press-content .press-widget .press-item .press-item-content .supertitle {
+  display: block;
+  color: #000;
+}
+
+section.press .press-content .press-widget .press-item .press-item-content .supertitle.date {
+  color: #d0c5b6;
+  font-weight: normal;
+  line-height: 1;
+}
+
+section.press .press-content .press-widget .press-item .press-item-content .content-title {
+  margin: 60px 0 0;
+  font-size: 3rem;
 }
 /*# sourceMappingURL=app.css.map */
