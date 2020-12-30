@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: "Montserrat", sans-serif;
 }
 
 ul {
@@ -18,6 +18,18 @@ a:visited,
 a:active {
   color: #000;
   text-decoration: none;
+}
+
+a.btn {
+  display: inline-block;
+  font-size: 1.6rem;
+}
+
+a.btn.cta {
+  padding: 20px 120px;
+  color: #d0c5b6;
+  font-family: "millerdisplay";
+  border: 1px solid #d0c5b6;
 }
 
 @font-face {
@@ -42,6 +54,15 @@ a:active {
   font-family: "Merriweather";
   src: url("../fonts/Merriweather-Regular.eot");
   src: url("../fonts/Merriweather-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/Merriweather-Regular.woff2") format("woff2"), url("../fonts/Merriweather-Regular.woff") format("woff"), url("../fonts/Merriweather-Regular.ttf") format("truetype"), url("../fonts/Merriweather-Regular.svg#Merriweather") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "millerdisplay";
+  src: url("../fonts/miller-display_30501.eot");
+  src: url("../fonts/miller-display_30501.eot?#iefix") format("embedded-opentype"), url("../fonts/miller-display_30501.woff2") format("woff2"), url("../fonts/miller-display_30501.woff") format("woff"), url("../fonts/miller-display_30501.ttf") format("truetype"), url("../fonts/miller-display_30501.svg#millerdisplay") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -6164,7 +6185,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  height: 100px;
+  height: 95px;
   background-color: #fff;
 }
 
@@ -6182,6 +6203,9 @@ header .logo {
           align-items: center;
   width: 330px;
   background-color: #d0c5b6;
+}
+
+header .logo h1 {
   font-family: "Montserrat";
   font-size: 2.5rem;
   letter-spacing: 2px;
@@ -6228,9 +6252,11 @@ header .search {
 
 header .search input {
   width: 120px;
+  padding: 0 5px;
   border: 0;
   border-bottom: 1px solid #000;
   outline: 0;
+  font: inherit;
 }
 
 header .search button[type="submit"] {
@@ -6241,5 +6267,55 @@ header .search button[type="submit"] {
 header .search button[type="submit"] i {
   padding: 0 5px;
   font-size: 1rem;
+}
+
+section.hero {
+  height: calc(92vh - 95px);
+  background-image: url("../images/hero-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+
+section.hero .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+section.hero .overlay .hero-text {
+  padding-bottom: 40px;
+  color: #fff;
+}
+
+section.hero .overlay .hero-text .hero-supertitle {
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+section.hero .overlay .hero-text .hero-title {
+  max-width: 680px;
+  margin: 50px 0 25px;
+  font-size: 5.6rem;
+  font-family: "millerdisplay", serif;
+  font-weight: normal;
+  text-transform: capitalize;
+}
+
+section.hero .overlay .hero-text .hero-subtitle {
+  margin-bottom: 70px;
+  font-size: 0.95rem;
+  font-weight: normal;
+  letter-spacing: 0.5px;
 }
 /*# sourceMappingURL=app.css.map */

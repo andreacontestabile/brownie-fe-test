@@ -1,7 +1,7 @@
 header {
   display: flex;
   justify-content: space-between;
-  height: 100px;
+  height: 95px;
   background-color: $white;
 
   .logo {
@@ -11,11 +11,13 @@ header {
     align-items: center;
     width: 330px;
     background-color: $brandColor;
-    font-family: "Montserrat";
-    font-size: 2.5rem;
-    letter-spacing: 2px;
-    font-weight: bold;
-    color: $white;
+    h1 {
+      font-family: "Montserrat";
+      font-size: 2.5rem;
+      letter-spacing: 2px;
+      font-weight: bold;
+      color: $white;
+    }
   }
 
   .main-nav {
@@ -44,9 +46,11 @@ header {
 
     input {
       width: 120px;
+      padding: 0 5px;
       border: 0;
       border-bottom: 1px solid $black;
       outline: 0;
+      font: inherit;
     }
 
     button[type="submit"] {
