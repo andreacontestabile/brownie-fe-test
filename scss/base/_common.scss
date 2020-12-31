@@ -1,6 +1,9 @@
 body {
   font-family: "Montserrat", sans-serif;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  // -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
   p {
     color: $textColor;
     font-family: "Merriweather", serif;
@@ -43,7 +46,7 @@ a:active {
   text-decoration: none;
 }
 
-a.btn {
+.btn {
   display: inline-block;
   font-size: 1.6rem;
 

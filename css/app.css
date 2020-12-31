@@ -7,7 +7,9 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  -webkit-text-stroke: 1px rgba(0, 0, 0, 0.1);
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
 }
 
 body p {
@@ -52,12 +54,12 @@ a:active {
   text-decoration: none;
 }
 
-a.btn {
+.btn {
   display: inline-block;
   font-size: 1.6rem;
 }
 
-a.btn.cta {
+.btn.cta {
   padding: 20px 120px;
   color: #d0c5b6;
   font-family: "millerdisplay";
@@ -6425,6 +6427,10 @@ section.press {
   background: linear-gradient(90deg, #fff 50%, #f8f8f8 50%);
 }
 
+section.press h3 {
+  margin-bottom: 20px;
+}
+
 section.press .press-content {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6436,6 +6442,7 @@ section.press .press-content {
 
 section.press .press-content > p {
   width: 30%;
+  padding-top: 40px;
   padding-right: 40px;
 }
 
@@ -6470,7 +6477,232 @@ section.press .press-content .press-widget .press-item .press-item-content .supe
 }
 
 section.press .press-content .press-widget .press-item .press-item-content .content-title {
-  margin: 60px 0 0;
+  margin: 60px 0 80px;
   font-size: 3rem;
+}
+
+section.press .press-content .press-widget .press-item .press-item-content .press-widget-controls button {
+  background: none;
+  outline: 0;
+  border: none;
+  cursor: pointer;
+  color: #555;
+}
+
+section.press .press-content .press-widget .press-item .press-item-content .press-widget-controls button:first-child {
+  margin-right: 40px;
+}
+
+section.discover {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+section.discover .showcase {
+  width: 50%;
+  height: 850px;
+  background-color: grey;
+}
+
+section.discover .showcase:first-child,
+section.discover .showcase .showcase-item {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section.discover .showcase:nth-child(2) {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.discover .showcase:nth-child(2) .showcase-item {
+  width: 50%;
+  -webkit-filter: contrast(0.9);
+          filter: contrast(0.9);
+}
+
+section.discover .showcase .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+section.discover .showcase .overlay .showcase-text {
+  text-align: center;
+  color: #fff;
+}
+
+section.discover .showcase .overlay .showcase-text .supertitle {
+  font-weight: normal;
+}
+
+section.discover .showcase .overlay .showcase-text .content-title {
+  font-size: 5.4rem;
+}
+
+section.contact {
+  padding: 0 80px;
+  height: 350px;
+}
+
+section.contact .contact-container {
+  height: 100%;
+  background-image: url("../images/get-in-touch.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+section.contact .contact-container .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
+  text-align: center;
+  background-color: rgba(208, 197, 182, 0.8);
+}
+
+section.contact .contact-container .overlay .contact-text {
+  color: #fff;
+}
+
+section.contact .contact-container .overlay .contact-text .content-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 5.4rem;
+}
+
+section.contact .contact-container .overlay .contact-text .supertitle {
+  margin-bottom: 40px;
+  line-height: 1.3;
+  font-size: 1rem;
+}
+
+section.contact .contact-container .overlay .contact-form input[type="text"] {
+  padding: 20px 15px;
+  width: 380px;
+}
+
+section.contact .contact-container .overlay .contact-form input[type="text"]::-webkit-input-placeholder {
+  color: #fff;
+  font-family: "millerdisplay";
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+section.contact .contact-container .overlay .contact-form input[type="text"]:-ms-input-placeholder {
+  color: #fff;
+  font-family: "millerdisplay";
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+section.contact .contact-container .overlay .contact-form input[type="text"]::-ms-input-placeholder {
+  color: #fff;
+  font-family: "millerdisplay";
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+section.contact .contact-container .overlay .contact-form input[type="text"]::placeholder {
+  color: #fff;
+  font-family: "millerdisplay";
+  font-size: 1.3rem;
+  font-weight: normal;
+}
+
+section.contact .contact-container .overlay .contact-form button {
+  padding: 20px;
+  margin-left: 20px;
+}
+
+section.contact .contact-container .overlay .contact-form input[type="text"],
+section.contact .contact-container .overlay .contact-form button {
+  background: none;
+  color: #fff;
+  font-family: "millerdisplay";
+  font-size: 1.3rem;
+  font-weight: normal;
+  border: 1px solid #fff;
+}
+
+footer {
+  padding: 0 80px;
+}
+
+footer .footer-top {
+  padding: 160px 0 200px;
+  background-color: #333333;
+}
+
+footer .footer-top .footer-container {
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+footer .footer-top .footer-container .logo {
+  margin-bottom: 40px;
+}
+
+footer .footer-top .footer-container .logo h2 {
+  color: #fff;
+  font-family: "Montserrat";
+  font-size: 2.5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+footer .footer-top .footer-container .footer-content .location {
+  padding-right: 120px;
+}
+
+footer .footer-top .footer-container .footer-content .footer-nav .footer-nav-list {
+  padding-right: 150px;
+}
+
+footer .footer-top .footer-container .footer-content,
+footer .footer-top .footer-container .footer-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer .footer-top .footer-container .footer-content p,
+footer .footer-top .footer-container .footer-nav-list-item a {
+  font-family: "millerdisplay";
+  color: #d0c5b6;
+  font-size: 1rem;
+  font-weight: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+footer .footer-top .footer-container .footer-content p,
+footer .footer-top .footer-container .footer-nav-list-item {
+  margin-bottom: 28px;
 }
 /*# sourceMappingURL=app.css.map */

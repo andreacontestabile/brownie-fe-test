@@ -1,0 +1,51 @@
+footer {
+  padding: 0 80px;
+  .footer-top {
+    padding: 160px 0 200px;
+    background-color: $footerTopColor;
+    .footer-container {
+      max-width: 1300px;
+      margin: 0 auto;
+      .logo {
+        margin-bottom: 40px;
+        h2 {
+          color: $white;
+          font-family: "Montserrat";
+          font-size: 2.5rem;
+          letter-spacing: 2px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+      }
+
+      .footer-content {
+        .location {
+          padding-right: 120px;
+        }
+        .footer-nav {
+          .footer-nav-list {
+            padding-right: 150px;
+          }
+        }
+      }
+      .footer-content,
+      .footer-nav {
+        display: flex;
+      }
+      .footer-content p,
+      .footer-nav-list-item a {
+        font-family: "millerdisplay";
+        color: $brandColor;
+        font-size: 1rem;
+        font-weight: normal;
+        letter-spacing: normal;
+        line-height: normal;
+      }
+
+      .footer-content p,
+      .footer-nav-list-item {
+        margin-bottom: 28px;
+      }
+    }
+  }
+}
