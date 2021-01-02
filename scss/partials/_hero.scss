@@ -1,5 +1,6 @@
 .hero {
   height: calc(92vh - 95px);
+  min-height: 600px;
   background-image: url("../images/hero-bg.jpg");
   background-size: cover;
   background-position: center;
@@ -21,6 +22,14 @@
         font-family: "millerdisplay", serif;
         font-weight: normal;
         text-transform: capitalize;
+
+        @media screen and (max-width: 1600px) {
+          font-size: 4.5rem;
+        }
+
+        @media screen and (max-width: 1024px) {
+          font-size: 3.5rem;
+        }
       }
     }
   }

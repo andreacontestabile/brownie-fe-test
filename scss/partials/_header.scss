@@ -4,6 +4,10 @@ header {
   height: 95px;
   background-color: $white;
 
+  @media screen and (max-width: 768px) {
+    background-color: $brandColor;
+  }
+
   .logo {
     display: flex;
     flex-shrink: 0;
@@ -11,17 +15,31 @@ header {
     align-items: center;
     width: 330px;
     background-color: $brandColor;
+
+    @media screen and (max-width: 1600px) {
+      width: 250px;
+    }
+
     h1 {
       font-family: "Montserrat";
       font-size: 2.5rem;
       letter-spacing: 2px;
       font-weight: bold;
       color: $white;
+
+      @media screen and (max-width: 1600px) {
+        font-size: 2rem;
+      }
     }
   }
 
   .main-nav {
     width: 100%;
+
+    @media screen and (max-width: 1024px) {
+      display: none;
+    }
+
     ul.main-nav-list {
       height: 100%;
       display: flex;
@@ -32,6 +50,9 @@ header {
         a.main-nav-link {
           font-size: 1.1rem;
           font-weight: normal;
+          @media screen and (max-width: 1280px) {
+            font-size: 0.95rem;
+          }
         }
       }
     }
@@ -44,6 +65,14 @@ header {
     flex-shrink: 0;
     width: 400px;
 
+    @media screen and (max-width: 1600px) {
+      width: 250px;
+    }
+
+    @media screen and (max-width: 768px) {
+      display: none;
+    }
+
     input {
       width: 120px;
       padding: 0 5px;
@@ -51,6 +80,12 @@ header {
       border-bottom: 1px solid $black;
       outline: 0;
       font: inherit;
+
+      @media screen and (max-width: 1024px) {
+        height: 40px;
+        width: 250px;
+        font-size: 1.2rem;
+      }
     }
 
     button[type="submit"] {
@@ -60,6 +95,34 @@ header {
       i {
         padding: 0 5px;
         font-size: 1rem;
+      }
+    }
+  }
+
+  .mobile-controls {
+    display: flex;
+
+    button.mobile-menu-btn {
+      width: 95px;
+      display: none;
+      border: none;
+      outline: none;
+      background-color: $sectionBgColor;
+
+      @media screen and (max-width: 1024px) {
+        display: block;
+      }
+
+      i {
+        font-size: 2rem;
+        color: $footerBottomColor;
+      }
+
+      &.search {
+        display: none;
+        @media screen and (max-width: 768px) {
+          display: block;
+        }
       }
     }
   }
