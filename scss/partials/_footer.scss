@@ -6,6 +6,10 @@ footer {
   .footer-top {
     padding: 160px 0 200px;
     background-color: $footerTopColor;
+
+    @media screen and (max-width: 480px) {
+      padding: 80px 0 100px;
+    }
     .logo {
       margin-bottom: 40px;
       h2 {
@@ -19,18 +23,55 @@ footer {
     }
 
     .footer-content {
+      @media screen and (max-width: 900px) {
+        flex-direction: column;
+      }
       .location {
         padding-right: 120px;
+
+        @media screen and (max-width: 900px) {
+          margin-bottom: 40px;
+        }
       }
       .footer-nav {
         @media screen and (max-width: 1600px) {
           width: 70%;
           justify-content: space-between;
         }
+
+        @media screen and (max-width: 900px) {
+          width: 100%;
+        }
+
+        @media screen and (max-width: 480px) {
+          flex-wrap: wrap;
+        }
+
         .footer-nav-list {
           padding-right: 150px;
+
           @media screen and (max-width: 1600px) {
             padding-right: 0;
+          }
+
+          @media screen and (max-width: 480px) {
+            width: 50%;
+          }
+
+          @media screen and (max-width: 480px) {
+            margin-bottom: 40px;
+          }
+
+          .footer-nav-list-item {
+            a {
+              &.social-link {
+                font-family: "Montserrat", sans-serif;
+                font-size: 0.85rem;
+                font-weight: bold;
+                letter-spacing: 4px;
+                text-transform: uppercase;
+              }
+            }
           }
         }
       }

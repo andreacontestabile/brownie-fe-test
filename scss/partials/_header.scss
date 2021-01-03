@@ -20,6 +20,12 @@ header {
       width: 250px;
     }
 
+    @media screen and (max-width: 480px) {
+      width: auto;
+      padding-left: 10px;
+      justify-content: flex-start;
+    }
+
     h1 {
       font-family: "Montserrat";
       font-size: 2.5rem;
@@ -29,6 +35,10 @@ header {
 
       @media screen and (max-width: 1600px) {
         font-size: 2rem;
+      }
+
+      @media screen and (max-width: 480px) {
+        font-size: 1.5rem;
       }
     }
   }

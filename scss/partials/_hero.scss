@@ -30,6 +30,16 @@
         @media screen and (max-width: 1024px) {
           font-size: 3.5rem;
         }
+
+        @media screen and (max-width: 600px) {
+          font-size: 2.8rem;
+        }
+      }
+
+      a.btn.cta {
+        @media screen and (max-width: 480px) {
+          padding: 15px 80px;
+        }
       }
     }
   }

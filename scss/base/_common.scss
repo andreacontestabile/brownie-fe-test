@@ -44,6 +44,11 @@ body {
   @media screen and (max-width: 1280px) {
     max-width: 800px;
   }
+
+  @media screen and (max-width: 900px) {
+    max-width: 100%;
+    padding: 0 6%;
+  }
 }
 
 ul {
@@ -66,5 +71,12 @@ a:active {
     color: $brandColor;
     font-family: "millerdisplay";
     border: 1px solid $brandColor;
+    transition: background-color 0.4s, color 0.4s, border 0.4s;
+
+    &:hover {
+      background-color: $brandColor;
+      color: $white;
+      border: 1px solid $white;
+    }
   }
 }
