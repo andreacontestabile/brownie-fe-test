@@ -9,6 +9,7 @@
 
   .overlay {
     @include flex-centered;
+    position: relative;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.4);
     .hero-text {
@@ -39,6 +40,74 @@
       a.btn.cta {
         @media screen and (max-width: 480px) {
           padding: 15px 80px;
+        }
+      }
+    }
+
+    .spotlight-widget {
+      position: absolute;
+      bottom: 0;
+      right: 80px;
+      height: 330px;
+      width: 460px;
+      padding: 40px 20px;
+
+      @media screen and (max-width: 1700px) {
+        right: 60px;
+        width: 380px;
+        height: 240px;
+      }
+
+      @media screen and (max-width: 1400px) {
+        right: 20px;
+      }
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("../images/hero-panel-bg.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        filter: brightness(0.5);
+        z-index: 0;
+      }
+
+      .content-title {
+        position: relative;
+        z-index: 1;
+        font-family: "millerdisplay", serif;
+        font-weight: normal;
+        font-size: 1.5rem;
+        text-align: left;
+        color: $white;
+      }
+
+      .spotlight-widget-controls {
+        display: flex;
+        justify-content: space-between;
+        position: absolute;
+        width: 100%;
+        bottom: 40px;
+        right: 0;
+        padding: 0 40px;
+        z-index: 1;
+        color: $white;
+        font-family: "Montserrat", sans-serif;
+        font-size: 1rem;
+        text-transform: uppercase;
+        letter-spacing: 4px;
+
+        div {
+          cursor: pointer;
+
+          &.prev {
+            visibility: hidden;
+          }
         }
       }
     }

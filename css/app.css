@@ -6457,6 +6457,7 @@ header .mobile-controls button.mobile-menu-btn.search {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.4);
 }
@@ -6497,6 +6498,83 @@ header .mobile-controls button.mobile-menu-btn.search {
   .hero .overlay .hero-text a.btn.cta {
     padding: 15px 80px;
   }
+}
+
+.hero .overlay .spotlight-widget {
+  position: absolute;
+  bottom: 0;
+  right: 80px;
+  height: 330px;
+  width: 460px;
+  padding: 40px 20px;
+}
+
+@media screen and (max-width: 1700px) {
+  .hero .overlay .spotlight-widget {
+    right: 60px;
+    width: 380px;
+    height: 240px;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .hero .overlay .spotlight-widget {
+    right: 20px;
+  }
+}
+
+.hero .overlay .spotlight-widget:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("../images/hero-panel-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  -webkit-filter: brightness(0.5);
+          filter: brightness(0.5);
+  z-index: 0;
+}
+
+.hero .overlay .spotlight-widget .content-title {
+  position: relative;
+  z-index: 1;
+  font-family: "millerdisplay", serif;
+  font-weight: normal;
+  font-size: 1.5rem;
+  text-align: left;
+  color: #fff;
+}
+
+.hero .overlay .spotlight-widget .spotlight-widget-controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  right: 0;
+  padding: 0 40px;
+  z-index: 1;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.hero .overlay .spotlight-widget .spotlight-widget-controls div {
+  cursor: pointer;
+}
+
+.hero .overlay .spotlight-widget .spotlight-widget-controls div.prev {
+  visibility: hidden;
 }
 
 section {
