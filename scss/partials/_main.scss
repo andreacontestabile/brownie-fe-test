@@ -184,7 +184,11 @@ section {
 
         .press-item {
           height: 100%;
-          display: flex;
+          display: none;
+
+          &.active {
+            display: flex;
+          }
 
           @media screen and (max-width: 768px) {
             flex-direction: column;

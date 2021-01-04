@@ -71,6 +71,10 @@ footer {
                 letter-spacing: 4px;
                 text-transform: uppercase;
               }
+
+              span.mail {
+                border-bottom: 1px solid $brandColor;
+              }
             }
           }
         }

@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="stylesheet" href="css/app.css">
     <title>WatchLab</title>
   </head>
@@ -30,7 +31,7 @@
       </div>
       <div class="mobile-controls">
         <!-- <button class="mobile-menu-btn search"><i class="fas fa-search"></i></button> -->
-        <button class="mobile-menu-btn menu"><i class="fas fa-bars"></i></button>
+        <button class="mobile-menu-btn"><i class="fas fa-bars"></i></button>
       </div>
     </header>
     <main>
@@ -46,15 +47,27 @@
                 href="#">Discover</a></div>
           </div>
           <div class="spotlight-widget">
-            <h4 class="content-title">The Path to Success<br>with Watchlab</h4>
+            <div class="toggle"><i class="fas fa-arrow-up"></i></div>
+            <div class="spotlight-item active">
+              <div class="spotlight-item-content" style="background-image: url('images/spotlight-1.jpg')"></div>
+              <h4 class="content-title">The Path to Success<br>with Watchlab</h4>
+            </div>
+            <div class="spotlight-item">
+              <div class="spotlight-item-content" style="background-image: url('images/spotlight-2.jpg')"></div>
+              <h4 class="content-title">Spotlight #1<br>with Watchlab</h4>
+            </div>
+            <div class="spotlight-item">
+              <div class="spotlight-item-content" style="background-image: url('images/spotlight-3.jpg')"></div>
+              <h4 class="content-title">Spotlight #2<br>with Watchlab</h4>
+            </div>
             <div class="spotlight-widget-controls">
-              <div class="prev"><i class="fas fa-chevron-left"></i> Previous </div>
-              <div class="next">Next <i class="fas fa-chevron-right"></i></div>
+              <button class="prev"><i class="fas fa-chevron-left"></i> Previous</button>
+              <button class="next">Next <i class="fas fa-chevron-right"></i></button>
             </div>
           </div>
         </div>
       </div>
-      <section id="history" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+      <section id="history" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="400">
         <h3>History and <br>Patriarcal season</h3>
         <div class="history-text">
           <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
@@ -65,7 +78,7 @@
         </div>
       </section>
       <section class="highlights">
-        <div class="highlight" data-aos="flip-right" data-aos-duration="1000" data-aos-offset="200">
+        <div class="highlight" data-aos="flip-right" data-aos-duration="1000" data-aos-offset="400">
           <div class="highlights-description">
             <p class="supertitle">London Collection Season</p>
             <h4 class="content-title">Temporary Store</h4>
@@ -75,7 +88,7 @@
           </div>
           <div class="highlights-img" style="background-image: url('images/section-1.jpg')"></div>
         </div>
-        <div class="highlight" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="200">
+        <div class="highlight" data-aos="flip-left" data-aos-duration="1000" data-aos-offset="400">
           <div class="highlights-img" style="background-image: url('images/section-2.jpg')"></div>
           <div class="highlights-description">
             <p class="supertitle">London Collection Season</p>
@@ -86,22 +99,46 @@
           </div>
         </div>
       </section>
-      <section class="press" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="200">
+      <section class="press" data-aos="fade-right" data-aos-duration="1000" data-aos-offset="400">
         <h3>Press from<br>Watch Lab Studio</h3>
         <div class="press-content">
           <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and
             demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain
             trouble</p>
-          <div class="press-widget" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="200">
-            <div class="press-item">
+          <div class="press-widget" data-aos="fade-up" data-aos-duration="1000" data-aos-offset="400">
+            <div class="press-item active">
               <div class="press-widget-img" style="background-image: url('images/press-1.png')"></div>
               <div class="press-item-content">
                 <p class="supertitle">Press</p>
                 <p class="supertitle date">18 Settembre 2015</p>
                 <h4 class="content-title">Most Important Days on Watchlab</h4>
                 <div class="press-widget-controls">
-                  <button><i class="fas fa-chevron-left"></i></button>
-                  <button><i class="fas fa-chevron-right"></i></button>
+                  <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                  <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="press-item">
+              <div class="press-widget-img" style="background-image: url('images/press-2.jpg')"></div>
+              <div class="press-item-content">
+                <p class="supertitle">Press</p>
+                <p class="supertitle date">19 Maggio 2016</p>
+                <h4 class="content-title">Event #1 in Watchlab</h4>
+                <div class="press-widget-controls">
+                  <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                  <button class="next"><i class="fas fa-chevron-right"></i></button>
+                </div>
+              </div>
+            </div>
+            <div class="press-item">
+              <div class="press-widget-img" style="background-image: url('images/press-3.jpg')"></div>
+              <div class="press-item-content">
+                <p class="supertitle">Press</p>
+                <p class="supertitle date">20 Dicembre 2018</p>
+                <h4 class="content-title">Event #2 in Watchlab</h4>
+                <div class="press-widget-controls">
+                  <button class="prev"><i class="fas fa-chevron-left"></i></button>
+                  <button class="next"><i class="fas fa-chevron-right"></i></button>
                 </div>
               </div>
             </div>
@@ -109,7 +146,7 @@
         </div>
       </section>
       <section class="discover">
-        <div class="showcase" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="200"
+        <div class="showcase" data-aos="zoom-in" data-aos-duration="1000" data-aos-offset="400"
           style="background-image: url('images/discover-1.jpg')">
           <div class="overlay">
             <div class="showcase-text">
@@ -120,13 +157,13 @@
         </div>
         <div class="showcase">
           <div class="showcase-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250"
-            data-aos-offset="200" style="background-image: url('images/discover-2.jpg')"></div>
+            data-aos-offset="400" style="background-image: url('images/discover-2.jpg')"></div>
           <div class="showcase-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250"
-            data-aos-offset="200" style="background-image: url('images/discover-3.jpg')"></div>
+            data-aos-offset="400" style="background-image: url('images/discover-3.jpg')"></div>
           <div class="showcase-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250"
-            data-aos-offset="200" style="background-image: url('images/discover-4.jpg')"></div>
+            data-aos-offset="400" style="background-image: url('images/discover-4.jpg')"></div>
           <div class="showcase-item" data-aos="zoom-in" data-aos-duration="1000" data-aos-delay="250"
-            data-aos-offset="200" style="background-image: url('images/discover-5.jpg')"></div>
+            data-aos-offset="400" style="background-image: url('images/discover-5.jpg')"></div>
         </div>
       </section>
       <section class="contact">
@@ -170,7 +207,7 @@
               </ul>
               <ul class="footer-nav-list">
                 <li class="footer-nav-list-item"><a href="#">T. +39 392 9133937</a></li>
-                <li class="footer-nav-list-item"><a href="#">M. info@watch-lab.it</a></li>
+                <li class="footer-nav-list-item"><a href="#">M. <span class="mail">info@watch-lab.it</span></a></li>
                 <li class="footer-nav-list-item"><a class="social-link" href="#">FACEBOOK</a></li>
                 <li class="footer-nav-list-item"><a class="social-link" href="#">INSTAGRAM</a></li>
               </ul>

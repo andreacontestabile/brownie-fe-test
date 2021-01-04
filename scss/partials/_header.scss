@@ -4,6 +4,10 @@ header {
   height: 95px;
   background-color: $white;
 
+  @media screen and (max-width: 1024px) {
+    position: relative;
+  }
+
   @media screen and (max-width: 768px) {
     background-color: $brandColor;
   }
@@ -48,6 +52,14 @@ header {
 
     @media screen and (max-width: 1024px) {
       display: none;
+      position: absolute;
+      top: 95px;
+      left: 0;
+      width: 100%;
+      background-color: $brandColor;
+      z-index: 1;
+      border-top: 1px solid $footerTopColor;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
     }
 
     ul.main-nav-list {
@@ -56,12 +68,52 @@ header {
       align-items: center;
       justify-content: space-evenly;
 
+      @media screen and (max-width: 1024px) {
+        height: auto;
+        flex-direction: column;
+      }
+
       li.main-nav-list-item {
+        @media screen and (max-width: 1024px) {
+          position: relative;
+          display: block;
+          width: 100%;
+          text-align: center;
+        }
+
+        &:not(:last-child):after {
+          @media screen and (max-width: 1024px) {
+            position: absolute;
+            bottom: -1px;
+            left: 50%;
+            transform: translateX(-50%);
+            content: "";
+            height: 1px;
+            width: 300px;
+            background-color: $white;
+          }
+        }
+
         a.main-nav-link {
           font-size: 1.1rem;
           font-weight: normal;
+
           @media screen and (max-width: 1280px) {
             font-size: 0.95rem;
+          }
+
+          @media screen and (max-width: 1024px) {
+            display: block;
+            padding: 15px 0;
+            width: 100%;
+          }
+
+          &:hover,
+          &:active {
+            @media screen and (max-width: 1024px) {
+              background-color: $footerTopColor;
+              color: $white;
+            }
           }
         }
       }
@@ -118,6 +170,7 @@ header {
       border: none;
       outline: none;
       background-color: $sectionBgColor;
+      cursor: pointer;
 
       @media screen and (max-width: 1024px) {
         display: block;
