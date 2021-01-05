@@ -73,6 +73,10 @@ a:active {
     border: 1px solid $brandColor;
     transition: background-color 0.4s, color 0.4s, border 0.4s;
 
+    @media screen and (max-width: 768px) {
+      padding: 20px 80px;
+    }
+
     &:hover {
       background-color: $brandColor;
       color: $white;

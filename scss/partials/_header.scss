@@ -97,6 +97,7 @@ header {
         a.main-nav-link {
           font-size: 1.1rem;
           font-weight: normal;
+          transition: color 0.2s;
 
           @media screen and (max-width: 1280px) {
             font-size: 0.95rem;
@@ -110,6 +111,7 @@ header {
 
           &:hover,
           &:active {
+            color: $brandColor;
             @media screen and (max-width: 1024px) {
               background-color: $footerTopColor;
               color: $white;

@@ -4,7 +4,6 @@
   "description": "Brownie Front End Test",
   "main": "index.js",
   "scripts": {
-    "watch": "node-sass --watch scss -o css",
     "dev": "node-sass scss -o css"
   },
   "repository": {

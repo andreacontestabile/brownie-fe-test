@@ -43,7 +43,7 @@ footer {
           width: 100%;
         }
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 768px) {
           flex-wrap: wrap;
         }
 
@@ -54,12 +54,15 @@ footer {
             padding-right: 0;
           }
 
-          @media screen and (max-width: 480px) {
+          @media screen and (max-width: 768px) {
             width: 50%;
+            margin-bottom: 40px;
           }
 
-          @media screen and (max-width: 480px) {
-            margin-bottom: 40px;
+          &.contact {
+            @media screen and (max-width: 768px) {
+              width: 100%;
+            }
           }
 
           .footer-nav-list-item {
@@ -89,7 +92,7 @@ footer {
     .footer-nav-list-item a {
       font-family: "millerdisplay";
       color: $brandColor;
-      font-size: 1rem;
+      font-size: 1.05rem;
       font-weight: normal;
       letter-spacing: normal;
       line-height: normal;

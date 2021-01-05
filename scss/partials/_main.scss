@@ -15,6 +15,10 @@ section {
     @media screen and (max-width: 1600px) {
       font-size: 4rem;
     }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 3.2rem;
+    }
   }
 
   .content-title {
@@ -22,6 +26,10 @@ section {
     font-family: "millerdisplay", serif;
     font-size: 3.8rem;
     font-weight: normal;
+
+    @media screen and (max-width: 768px) {
+      font-size: 3rem;
+    }
   }
 
   &#history {
@@ -98,7 +106,7 @@ section {
         .btn {
           margin-top: 60px;
           &.cta {
-            padding: 20px 140px;
+            padding: 20px 100px;
           }
         }
       }
@@ -370,7 +378,7 @@ section {
         @include flex-centered;
         flex-direction: column;
         height: 100%;
-        padding: 80px 0;
+        padding: 50px 0;
         text-align: center;
         background-color: rgba(208, 197, 182, 0.8);
         .contact-text {
@@ -415,9 +423,13 @@ section {
             }
 
             &:focus {
-              background-color: $white;
-              color: $black;
+              background-color: rgba(255, 255, 255, 0.75);
+              color: $footerTopColor;
               border: 1px solid $footerTopColor;
+
+              &::placeholder {
+                color: $footerTopColor;
+              }
             }
           }
 
@@ -427,7 +439,7 @@ section {
             cursor: pointer;
 
             &:hover {
-              background-color: $white;
+              background-color: rgba(255, 255, 255, 0.75);
               color: $footerTopColor;
               border: 1px solid $footerTopColor;
             }
